@@ -2,7 +2,7 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import {
   NbAuthComponent,
-  NbLoginComponent,
+  // NbLoginComponent,
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
@@ -10,7 +10,8 @@ import {
 // Mfx- Custom Logout and Register components that
 // replace NbLogoutComponent and NbRegisterComponent
 import { LogoutComponent } from 'app/pages/logout/logout.component';
-import { RegisterComponent } from 'app/pages/register/register.component';
+// import { RegisterComponent } from 'app/pages/register/register.component';
+import { LoginComponent } from 'app/auth/login/login.component';
 
 export const routes: Routes = [
   {
@@ -24,16 +25,18 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        component: NbLoginComponent,
+        // component: NbLoginComponent,
+        component: LoginComponent,
       },
       {
         path: 'login',
-        component: NbLoginComponent,
+        // component: NbLoginComponent,
+        component: LoginComponent,
       },
-      {
-        path: 'register',
-        component: RegisterComponent,
-      },
+      // {
+      //   path: 'register',
+      //   component: RegisterComponent,
+      // },
       {
         path: 'logout',
         component: LogoutComponent,
