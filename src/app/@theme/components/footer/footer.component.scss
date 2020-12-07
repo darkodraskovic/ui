@@ -27,11 +27,12 @@
       float: left;
       padding: 4px;
     }
+    
     em {
-      display: inline;      
+      display: inline;
     }
   }
-  
+
   @include media-breakpoint-down(is) {
     .socials {
       font-size: 1.5rem;
