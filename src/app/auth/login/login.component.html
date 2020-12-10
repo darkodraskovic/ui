@@ -1,3 +1,6 @@
+<img class="center" src="assets/images/mainflux-logo.png" alt="Ashvin logo">
+<p class="label">Digitising and transforming the European construction industry, ASHVIN introduces digital twin technologies enabling energy-efficient buildings with a low environmental impact.</p>
+
 <h1 id="title" class="title">Sign In</h1>
 
 <nb-alert *ngIf="showMessages.error && errors?.length && !submitted" outline="danger" role="alert">
@@ -68,12 +71,12 @@
     </ng-container>
   </div>
 
-  <div class="form-control-group accept-group">
-    <nb-checkbox name="rememberMe" [(ngModel)]="user.rememberMe" *ngIf="rememberMe">Remember me</nb-checkbox>
-    <a class="forgot-password" routerLink="../request-password">Forgot Password?</a>
-  </div>
-
-  <button nbButton
+  <!-- <div class="form-control-group accept-group">
+       <nb-checkbox name="rememberMe" [(ngModel)]="user.rememberMe" *ngIf="rememberMe">Remember me</nb-checkbox>
+       <a class="forgot-password" routerLink="../request-password">Forgot Password?</a>
+       </div>
+  -->
+  <button nbButton class="button-blue"
           fullWidth
           status="success"
           [disabled]="submitted || !form.valid"
