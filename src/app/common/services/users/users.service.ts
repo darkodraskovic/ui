@@ -12,7 +12,7 @@ const defLimit: number = 20;
 
 @Injectable()
 export class UsersService {
-  picture = 'assets/images/mainflux-logo.png';
+  picture = '';
 
   constructor(
     private http: HttpClient,
