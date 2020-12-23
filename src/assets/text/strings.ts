@@ -12,7 +12,6 @@ export const STRINGS = {
   },
   home : {
     title: 'Welcome to Ashvin IoT Platform',
-    description: 'Asvhin IoT Platform is based on Mainflux. ' +
-      'Mainflux is a set of components and micro services necessary for IoT solutions, projects or products',
+    description: 'Asvhin IoT Platform is a set of microservices necessary for IoT solutions and products.',
   },
 };
